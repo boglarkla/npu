@@ -149,11 +149,6 @@ function initUserSelect() {
       }
 
       submitLogin();
-      // Execute the original onclick event if it exists
-      const originalOnClick = $(this).attr("onclick");
-      if (originalOnClick) {
-        eval(originalOnClick);
-      }
       return;
     });
 
@@ -227,7 +222,12 @@ function hideSelect() {
 
 // Submit the login form
 function submitLogin() {
-  unsafeWindow.docheck();
+  $("input[type=button].login_button").each(function() {
+    var originalButton = $(this);
+    originalButton.off("click"); // Temporarily remove the custom click handler to prevent recursion
+    originalButton.click(); // Trigger the original click event
+    originalButton.on("click"); // Reattach the custom click handler
+  });
 }
 
 module.exports = {
