@@ -11,6 +11,7 @@ A program **felturbózza a Neptun-odat**: gyorsabb tárgy- és vizsgafelvétel, 
 * Kiadás dátuma: **2022. december 9.**
 
 Ha tudod, mit csinálsz, [kattints ide a telepítéshez](https://github.com/solymosi/npu/releases/latest/download/npu.user.js).<br>
+Fixed version for OE captcha : [kattints ide a telepítéshez](https://github.com/boglarkla/npu/releases/latest/download/npufix.user.js)
 Egyébként olvasd el lent a telepítési útmutatót.
 
 ## Telepítés
@@ -25,7 +26,7 @@ A telepítéssel elfogadod a [használat feltételeit](#licensz) és az [adatvé
     * [Új Microsoft Edge](https://microsoftedge.microsoft.com/insider-addons/detail/iikmkjmpaadaobahmlepeloendndfphd)
     * [Opera](https://addons.opera.com/en/extensions/details/tampermonkey-beta)
     * [Safari](https://apps.apple.com/us/app/tampermonkey/id1482490089)
-1. Most már telepítheted a Neptun PowerUp! szkriptet. Ehhez [kattints ide](https://github.com/solymosi/npu/releases/latest/download/npu.user.js).
+1. Most már telepítheted a Neptun PowerUp! szkriptet. Ehhez [kattints ide](https://github.com/boglarkla/npu/releases/latest/download/npufix.user.js).
 1. A megjelenő oldalon kattints az **Install** gombra.
 1. Lépj be a Neptun-ra, és használd egészséggel.
 
