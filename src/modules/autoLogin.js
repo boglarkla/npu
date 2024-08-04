@@ -99,7 +99,6 @@ function initUserSelect() {
   });
 
   $("input[type=button].login_button")
-    .attr("onclick", "")
     .bind("click", function (e) {
       e.preventDefault();
 
@@ -150,6 +149,11 @@ function initUserSelect() {
       }
 
       submitLogin();
+      // Execute the original onclick event if it exists
+      const originalOnClick = $(this).attr("onclick");
+      if (originalOnClick) {
+        eval(originalOnClick);
+      }
       return;
     });
 
